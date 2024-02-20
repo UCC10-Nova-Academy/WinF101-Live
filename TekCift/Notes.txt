@@ -1,0 +1,3 @@
+﻿? Ekranda bir textbox ve bir buton  var
+bir sayı girıyorum. butona basınca girilen sayının tek mi çift mi
+olduğunu ekrana mesaj olarak yazacak...Girdiğiniz sayı tek/çift tır diye.

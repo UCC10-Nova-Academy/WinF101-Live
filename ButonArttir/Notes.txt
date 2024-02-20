@@ -1,0 +1,4 @@
+﻿? Ekranda bir label ve buton var
+ilk baslangıcta label içersinde 0 yazıyor
+butona her basıldığında label içini bir artırsın ve gçstersin
+diğer butona basıldığında da eksiltsin ama 0 ın altına dusmesin

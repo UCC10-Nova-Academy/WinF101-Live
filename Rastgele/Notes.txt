@@ -1,0 +1,1 @@
+﻿? 1 ila 20 arasında rastgele tam sayı uretip bunlarıbir listbox içinde gostermek
