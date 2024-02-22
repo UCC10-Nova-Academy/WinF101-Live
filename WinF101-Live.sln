@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rastgele", "Rastgele\Rastge
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TekCift", "TekCift\TekCift.csproj", "{0FBD5A8E-6DBF-4AFD-9F99-6895528340B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtYarisi", "AtYarisi\AtYarisi.csproj", "{A09D4808-8146-4AF1-968E-1E706DCDA15E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{0FBD5A8E-6DBF-4AFD-9F99-6895528340B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FBD5A8E-6DBF-4AFD-9F99-6895528340B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FBD5A8E-6DBF-4AFD-9F99-6895528340B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A09D4808-8146-4AF1-968E-1E706DCDA15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A09D4808-8146-4AF1-968E-1E706DCDA15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A09D4808-8146-4AF1-968E-1E706DCDA15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A09D4808-8146-4AF1-968E-1E706DCDA15E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
