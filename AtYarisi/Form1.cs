@@ -18,22 +18,37 @@ namespace AtYarisi
 
         private void btonAt1_Click(object sender, EventArgs e)
         {
-            label2.Text = " Seçiminiz 1 numaralý at";
+            label2.Text = "Seçiminiz 1 numaralý at";
         }
 
         private void btonAt2_Click(object sender, EventArgs e)
         {
-            label2.Text = " Seçiminiz 2 numaralý at";
+            label2.Text = "Seçiminiz 2 numaralý at";
         }
 
         private void btonAt3_Click(object sender, EventArgs e)
         {
-            label2.Text = " Seçiminiz 3 numaralý at";
+            label2.Text = "Seçiminiz 3 numaralý at";
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void IlkKonum()
+        {
+            btonAt1.Location = new Point(btn1x, btn1y);
+            btonAt2.Location = new Point(btn2x, btn2y);
+            btonAt3.Location = new Point(btn3x, btn3y);
+
+            button1.Enabled = true;
+            btonAt1.Enabled = true;
+            btonAt2.Enabled = true;
+            btonAt3.Enabled = true;
+
+            label2.Text = "";
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -81,7 +96,34 @@ namespace AtYarisi
             int konum2 = rnd.Next(2, 10);
             int konum3 = rnd.Next(2, 10);
 
-            if (btonAt1.)
+            
+            if (btonAt1.Right > lbelBitis.Left ||
+                btonAt2.Right > lbelBitis.Left ||
+                btonAt3.Right > lbelBitis.Left)
+            {
+                // Bitiþ labelýna ulastýysa yani yarýs bittiyse
+                // hangi at bitirdi
+                if (btonAt1.Right > btonAt2.Right &&
+                    btonAt1.Right > btonAt3.Right)
+                {
+                    // 1 ondeyse
+                    if (label2.Text== "Seçiminiz 1 numaralý at")
+                    {
+                        timer1.Stop();
+                        MessageBox.Show("Tebrikler bildiniz","Yarýþ Bitti",MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                        IlkKonum();
+                    }
+                    else
+                    {
+                        timer1.Stop();
+                        MessageBox.Show("Maalesef bilemediniz", "Yarýþ Bitti", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                        IlkKonum();
+                    }
+                }
+                else if ()
+            }
 
 
         }

@@ -31,7 +31,7 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
-            label1 = new Label();
+            lbelBitis = new Label();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             label2 = new Label();
@@ -56,14 +56,14 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // label1
+            // lbelBitis
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(1030, 123);
-            label1.Name = "label1";
-            label1.Size = new Size(51, 25);
-            label1.TabIndex = 1;
-            label1.Text = "BİTİŞ";
+            lbelBitis.AutoSize = true;
+            lbelBitis.Location = new Point(1030, 123);
+            lbelBitis.Name = "lbelBitis";
+            lbelBitis.Size = new Size(51, 25);
+            lbelBitis.TabIndex = 1;
+            lbelBitis.Text = "BİTİŞ";
             // 
             // pictureBox2
             // 
@@ -168,7 +168,7 @@
             Controls.Add(label2);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
-            Controls.Add(label1);
+            Controls.Add(lbelBitis);
             Controls.Add(pictureBox1);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -184,7 +184,7 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Label label1;
+        private Label lbelBitis;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Label label2;
