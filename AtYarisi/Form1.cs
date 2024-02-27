@@ -166,6 +166,13 @@ namespace AtYarisi
                     }
                 }
             }
+            else
+            {
+                // yarýþýn devam ettiði durum
+                btonAt1.Location = new Point(btonAt1.Location.X + konum1,btonAt1.Location.Y);
+                btonAt2.Location = new Point(btonAt2.Location.X+konum2,btonAt2.Location.Y);
+                btonAt3.Location = new Point(btonAt3.Location.X+ konum3,btonAt3.Location.Y);
+            }
 
 
         }
