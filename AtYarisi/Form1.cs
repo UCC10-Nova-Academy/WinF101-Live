@@ -53,7 +53,7 @@ namespace AtYarisi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Burada butonlarýn ilk konumlarýný ayarlýyorum.
+            // Burada butonlarýn ilk konumlarýný öðreniyorum.
 
             btn1x = btonAt1.Location.X;
             btn1y = btonAt1.Location.Y;
@@ -90,6 +90,8 @@ namespace AtYarisi
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            // Atlarý hareket ettiren bölüm
+
             // her bir at için rastgele bir sayý ureteceðim
 
             int konum1 = rnd.Next(2, 10);
@@ -99,7 +101,7 @@ namespace AtYarisi
             
             if (btonAt1.Right > lbelBitis.Left ||
                 btonAt2.Right > lbelBitis.Left ||
-                btonAt3.Right > lbelBitis.Left)
+                btonAt3.Right > lbelBitis.Left) // bir tanesi doüruysa bile yarýþ bitti demek.
             {
                 // Bitiþ labelýna ulastýysa yani yarýs bittiyse
                 // hangi at bitirdi
@@ -110,7 +112,8 @@ namespace AtYarisi
                     if (label2.Text== "Seçiminiz 1 numaralý at")
                     {
                         timer1.Stop();
-                        MessageBox.Show("Tebrikler bildiniz","Yarýþ Bitti",MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                        MessageBox.Show("Tebrikler bildiniz sizin at kazandý","Yarýþ Bitti",MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 
                         IlkKonum();
                     }
@@ -122,7 +125,46 @@ namespace AtYarisi
                         IlkKonum();
                     }
                 }
-                else if ()
+                else if (btonAt2.Right > btonAt1.Right &&
+                         btonAt2.Right > btonAt3.Right)
+                {
+                    // 2 ondeyse
+                    if (label2.Text == "Seçiminiz 2 numaralý at")
+                    {
+                        timer1.Stop();
+
+                        MessageBox.Show("Tebrikler bildiniz sizin at kazandý", "Yarýþ Bitti", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                        IlkKonum();
+                    }
+                    else
+                    {
+                        timer1.Stop();
+                        MessageBox.Show("Maalesef bilemediniz", "Yarýþ Bitti", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                        IlkKonum();
+                    }
+                }
+                else if (btonAt3.Right > btonAt1.Right &&
+                         btonAt3.Right > btonAt2.Right)
+                {
+                    // 2 ondeyse
+                    if (label2.Text == "Seçiminiz 3 numaralý at")
+                    {
+                        timer1.Stop();
+
+                        MessageBox.Show("Tebrikler bildiniz sizin at kazandý", "Yarýþ Bitti", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                        IlkKonum();
+                    }
+                    else
+                    {
+                        timer1.Stop();
+                        MessageBox.Show("Maalesef bilemediniz", "Yarýþ Bitti", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                        IlkKonum();
+                    }
+                }
             }
 
 
