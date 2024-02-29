@@ -117,6 +117,7 @@
             button5.TabIndex = 7;
             button5.Text = ">>";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -136,6 +137,7 @@
             button7.TabIndex = 9;
             button7.Text = "<<";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // Form1
             // 

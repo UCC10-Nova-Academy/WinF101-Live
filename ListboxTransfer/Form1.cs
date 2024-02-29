@@ -58,5 +58,25 @@ namespace ListboxTransfer
         {
             gonder(lboxOburu, lboxSehirler);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            foreach (var sehir in lboxSehirler.Items)
+            {
+                lboxOburu.Items.Add(sehir);
+            }
+
+            lboxSehirler.Items.Clear();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            foreach (var oburu in lboxOburu.Items)
+            {
+                lboxSehirler.Items.Add(oburu);
+            }
+
+            lboxOburu.Items.Clear();
+        }
     }
 }
