@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TekCift", "TekCift\TekCift.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtYarisi", "AtYarisi\AtYarisi.csproj", "{A09D4808-8146-4AF1-968E-1E706DCDA15E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HareketliButon", "HareketliButon\HareketliButon.csproj", "{6B6636C4-A642-4B2F-A23D-E0729CDF1E06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HareketliButon", "HareketliButon\HareketliButon.csproj", "{6B6636C4-A642-4B2F-A23D-E0729CDF1E06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListboxTransfer", "ListboxTransfer\ListboxTransfer.csproj", "{76BF7878-FBF3-42AC-8AB6-2851AE45EC57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{6B6636C4-A642-4B2F-A23D-E0729CDF1E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B6636C4-A642-4B2F-A23D-E0729CDF1E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B6636C4-A642-4B2F-A23D-E0729CDF1E06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76BF7878-FBF3-42AC-8AB6-2851AE45EC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76BF7878-FBF3-42AC-8AB6-2851AE45EC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76BF7878-FBF3-42AC-8AB6-2851AE45EC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76BF7878-FBF3-42AC-8AB6-2851AE45EC57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
