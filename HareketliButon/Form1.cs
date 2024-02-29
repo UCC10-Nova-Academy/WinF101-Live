@@ -60,7 +60,38 @@ namespace HareketliButon
                 }
             }
 
-            if (e.KeyCode == Keys.D) { }
+            if (e.KeyCode == Keys.W) 
+            {
+                if (btonKutu.Location.Y - 5 > 0) // hala en saða gelmedim
+                {
+                    btonKutu.Location = new Point(btonKutu.Location.X, btonKutu.Location.Y-5);
+                }
+
+            }
+
+            if (e.KeyCode == Keys.D)
+            {
+                if (btonKutu.Location.X + 5 > 0) // hala en saða gelmedim
+                {
+                    btonKutu.Location = new Point(btonKutu.Location.X + 5, btonKutu.Location.Y);
+                }
+
+            }
+
+            if (e.KeyCode == Keys.S)
+            {
+                if (btonKutu.Location.Y + 5 < this.Height - 1.9956f * btonKutu.Height)
+                {
+                    // asaðý gitmeye devam
+                    btonKutu.Location = new Point(btonKutu.Location.X, btonKutu.Location.Y + 5);
+                }
+
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
